@@ -7,4 +7,7 @@ RUN yum install -y emacs
 EXPOSE 80
 # Run httpd
 #CMD ["/usr/sbin/httpd", "-DFOREGROUND"]
+RUN yum install python3-pip -y
+RUN yum install python-devel -y
+RUN yum install python3.8 -y
 CMD ["/bin/bash"]
