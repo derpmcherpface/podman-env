@@ -10,4 +10,7 @@ EXPOSE 80
 RUN yum install python3-pip -y
 RUN yum install python-devel -y
 RUN yum install python3.8 -y
+COPY install_ollama.sh /opt/
+WORKDIR /opt
+RUN ./install_ollama.sh
 CMD ["/bin/bash"]
