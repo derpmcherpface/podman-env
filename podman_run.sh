@@ -9,5 +9,5 @@ podman run -t -d  \
        -e XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
        -e PULSE_SERVER=$PULSE_SERVER \
        -v ~/work:/work \
-       -v ~/.ollama:/root/ollama \
+       -v ~/.ollama:/root/.ollama \
        localhost/my-test-container:latest
