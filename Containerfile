@@ -13,4 +13,6 @@ RUN yum install python3.8 -y
 COPY install_ollama.sh /opt/
 WORKDIR /opt
 RUN ./install_ollama.sh
+COPY entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/bin/bash"]
