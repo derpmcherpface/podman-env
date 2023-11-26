@@ -1,5 +1,5 @@
 #!/bin/bash
 # sample entrypoint
-#ollama serve &
+ollama serve &
 echo hello world > /output.txt
 exec $@
