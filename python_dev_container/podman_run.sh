@@ -1,6 +1,7 @@
 # ensure directory mounts exist on host
 mkdir -p ~/.ollama
 podman run -t -d  \
+       --name python_langchain_container \
        -v ~/.Xauthority:/root/.Xauthority:Z \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        --net=host \
